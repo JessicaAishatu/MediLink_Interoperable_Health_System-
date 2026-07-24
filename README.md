@@ -2,16 +2,16 @@
 
 MediLink is a secure, modern, and interoperable full-stack health information system built with a **React.js** frontend, a **Node.js + Express.js** backend, a **MySQL** database, and an HL7-compliant **FHIR (Fast Healthcare Interoperability Resources) API** layer.
 
-The system features robust authentication, Role-Based Access Control (RBAC), user-friendly dashboards for both doctors and patients, and clinical utilities including appointments, medical history, lab results, and prescriptions. It also showcases **cross-hospital interoperability** by allowing doctors to query and import patient records from virtual external health systems via standardized FHIR JSON payloads.
+The system features robust authentication, Role-Based Access Control (RBAC), user friendly dashboards for both doctors and patients, and clinical utilities including appointments, medical history, lab results, and prescriptions. It also showcases **cross-hospital interoperability** by allowing doctors to query and import patient records from virtual external health systems through standardized FHIR JSON payloads.
 
 
 ## Technical Stack & Security
 
 - **Frontend**: React.js.
 - **Backend**: Node.js & Express.js.
-- **Database**: MySQL (using `mysql2` client with connection pool).
-- **Session Security**: JSON Web Tokens (JWT) for secure authentication.
-- **Data Protection**: `bcryptjs` password hashing and strict Role-Based Access Control (RBAC) supporting `patient`, `doctor`, and `admin` roles.
+- **Database**: MySQL.
+- **Authentication**: JSON Web Tokens (JWT).
+- **Password Security**: `bcryptjs` password hashing and strict Role-Based Access Control (RBAC) supporting `patient` and  `doctor` roles.
 - **Interoperability Layer**: Dynamic HL7 FHIR (v4.0.1) resource builder exposing `Patient`, `Observation`, `MedicationRequest`, and `Condition` JSON models.
 
 
